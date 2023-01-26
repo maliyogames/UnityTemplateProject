@@ -25,7 +25,7 @@ public class SceneLoader : MonoBehaviour
  
     IEnumerator ChangeScene(int sceneIndex)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadSceneAsync(sceneIndex);
     } 
    
