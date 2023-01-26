@@ -2,22 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 
 public class SceneLoader : MonoBehaviour
 {
-    [SerializeField]
-    private float delayBeforeLoading = 10f; //This is the amount of time a delay should occur.By default it is set to 10
-    [SerializeField]
-    private string sceneNameToLoad; // This specifies which scene by the name of the scene.
-    private float timeElapsed;//This calcuates the time
-    void Update()
-    {
-        timeElapsed += Time.deltaTime;
-        if(timeElapsed > delayBeforeLoading)
-        {
-            SceneManager.LoadScene(sceneNameToLoad);
-        }
+    [SerializeField]RectTransform fader;
 
+    
+    public void LoadLevel(int sceneIndex)
+    {
+        fader.gameObject.SetActive(true);
+        LeanTween.scale(fader,new Vector3(1,0,1), 0f);
+        LeanTween.scale(fader,new Vector3(1,1,1),1f).setEase(LeanTweenType.easeInOutQuad).setOnComplete(()=>
+        {
+            StartCoroutine(ChangeScene(sceneIndex));
+
+        });
+      
     }
+    
+ 
+    IEnumerator ChangeScene(int sceneIndex)
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadSceneAsync(sceneIndex);
+    } 
+   
 }
