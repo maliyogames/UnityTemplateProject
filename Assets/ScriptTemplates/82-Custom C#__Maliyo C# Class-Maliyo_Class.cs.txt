@@ -4,5 +4,12 @@ using UnityEngine;
 // Date updated: " + DateTime.Now.ToString("MM/dd/yyyy")
 public class #SCRIPTNAME# :MonoBehaviour
 {
-    
+    void Start()
+    {
+        //Add your code
+    }
+    void Update()
+    {
+        //Add your code
+    }
 }
