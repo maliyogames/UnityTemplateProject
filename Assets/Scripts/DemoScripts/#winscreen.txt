@@ -1,3 +1,0 @@
-#winscreen
-#win and loose button to display button
-
