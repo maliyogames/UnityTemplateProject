@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class jFFFFFf :MonoBehaviour
+// Date updated: " + DateTime.Now.ToString("MM/dd/yyyy")
+public class Maliyo_Class :MonoBehaviour
 {
     void Start()
     {
