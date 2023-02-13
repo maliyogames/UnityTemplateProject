@@ -1,13 +1,18 @@
-folder_name="Assets/DemoScripts"
+folder_name="Assets"
+current_date=$(date +"%Y-%m-%d")
 
-for file_name in "$folder_name"/*
-do
-  if [ -f "$file_name" ]; then
-    # Get the current date
-    current_date=$(date +"%Y-%m-%d")
-  
+# Find all .cs files in the Assets folder and its subdirectories
+find "$folder_name" -type f -name "*.cs" | while read file_name; do
+
+  # Check if the file contains the date comment
+  if grep -q "Date created: " "$file_name"; then
     # Replace the "Date created: " placeholder with the current date
-    awk -v d="Date created: $current_date" '{sub(/Date created:.*/,d);print}' "$file_name" > "$file_name".tmp
-    mv "$file_name".tmp "$file_name"
+    sed "s/Date created:.*/Date created: $current_date/" "$file_name" > "$file_name".tmp
+  else
+    # Add the date comment if it does not exist
+    echo "// Date created: $current_date" | cat - "$file_name" > "$file_name".tmp
   fi
+
+  mv "$file_name".tmp "$file_name"
+
 done
