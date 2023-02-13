@@ -1,9 +1,9 @@
-// Date created: 2023-02-13
+// Date updated: 2023-02-13
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 // Date created: 2023-02-13
-public class DummyClass :MonoBehaviour
+public class JClass :MonoBehaviour
 {
     void Start()
     {
