@@ -1,6 +1,4 @@
-// Date updated: 2023-02-13
 using System.Collections;
-// Date updated comment added to file for the first time
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
