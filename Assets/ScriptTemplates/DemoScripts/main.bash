@@ -1,4 +1,4 @@
-folder_name="Assets/Scripts/DemoScripts"
+folder_name="Assets/DemoScripts"
 
 for file_name in "$folder_name"/*
 do
