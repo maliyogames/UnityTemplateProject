@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
-// Date updated: " + DateTime.Now.ToString("MM/dd/yyyy")
+// Date updated: 2023-02-13
 public class VolumeSettings :MonoBehaviour
 {
     [SerializeField] AudioMixer mixer;
@@ -14,6 +14,7 @@ public class VolumeSettings :MonoBehaviour
     void Awake()
     {
         musicSlider.onValueChanged.AddListener(SetMusicVolume);
+        sfxSlider.onValueChanged.AddListener(SetSFXVolume);
     }
     void Start()
     {

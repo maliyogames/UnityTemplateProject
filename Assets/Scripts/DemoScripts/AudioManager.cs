@@ -6,39 +6,45 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
+
     [SerializeField] AudioMixer mixer;
     [SerializeField] AudioSource sfxSource;
-    [SerializeField] List<AudioClip> sfxClip = new List<AudioClip>();
-    [SerializeField] AudioClip sfxAudio;
-    public const string MUSIC_KEY="bgVolume"; 
-    public const string SFX_KEY="sfxVolume";
-    void Awake() 
+    [SerializeField] List<AudioClip> sfxClips = new List<AudioClip>();
+
+    public const string MUSIC_KEY = "bgVolume";
+    public const string SFX_KEY = "sfxVolume";
+
+    void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); // mark the game object as persistent
         }
         else
         {
             Destroy(gameObject);
-            
         }
+
+        
+    }
+    void Start()
+    {
         LoadVolume();
     }
-    public void PlayRandomSFX()
+
+    public void PlaySFX(int index)
     {
-        AudioClip clip = sfxClip[Random.Range(0, sfxClip.Count)];
+        AudioClip clip = sfxClips[index];
         sfxSource.PlayOneShot(clip);
     }
-    void LoadVolume()//volume is saved in the volumesettings
+
+    void LoadVolume()
     {
-        float musicVolume = PlayerPrefs.GetFloat(MUSIC_KEY,1f);
-        
-        float sfxVolume = PlayerPrefs.GetFloat(SFX_KEY,1f);
-        mixer.SetFloat(VolumeSettings.MIXER_MUSIC, Mathf.Log10(musicVolume) *20);
-        mixer.SetFloat(VolumeSettings.MIXER_SFX, Mathf.Log10(musicVolume) *20);
-        
+        float musicVolume = PlayerPrefs.GetFloat(MUSIC_KEY, 1f);
+        float sfxVolume = PlayerPrefs.GetFloat(SFX_KEY, 1f);
+
+        mixer.SetFloat(VolumeSettings.MIXER_MUSIC, Mathf.Log10(musicVolume) * 20);
+        mixer.SetFloat(VolumeSettings.MIXER_SFX, Mathf.Log10(sfxVolume) * 20);
     }
-   
 }
