@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
-// Date updated: 2023-02-13
+// Date updated: 2023-02-14
 public class VolumeSettings :MonoBehaviour
 {
     [SerializeField] AudioMixer mixer;

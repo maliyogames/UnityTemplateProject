@@ -8,8 +8,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     [SerializeField] AudioMixer mixer;
-    [SerializeField] AudioSource sfxSource;
-    [SerializeField] List<AudioClip> sfxClips = new List<AudioClip>();
+    
 
     public const string MUSIC_KEY = "bgVolume";
     public const string SFX_KEY = "sfxVolume";
@@ -32,13 +31,11 @@ public class AudioManager : MonoBehaviour
     {
         LoadVolume();
     }
-
-    public void PlaySFX(int index)
+    void Update()
     {
-        AudioClip clip = sfxClips[index];
-        sfxSource.PlayOneShot(clip);
+        
     }
-
+    
     void LoadVolume()
     {
         float musicVolume = PlayerPrefs.GetFloat(MUSIC_KEY, 1f);
