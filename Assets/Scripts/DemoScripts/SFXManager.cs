@@ -16,10 +16,7 @@ public class SFXManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             sfxSource.clip = sfxClip;
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
     public void PlaySFX()
