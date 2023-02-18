@@ -6,26 +6,21 @@ public class SFXManager : MonoBehaviour
 {
     public static SFXManager instance;
 
+    public AudioSource sfxSource;
+    public AudioClip sfxClip;
 
 
-    private AudioSource sfxSource;
-    [SerializeField] private List<AudioClip> sfxClips = new List<AudioClip>();
-
-    private void Awake()
+     private void Awake()
     {
-        sfxSource = GetComponent<AudioSource>();
+        DontDestroyOnLoad(gameObject);
         
+        sfxSource.clip=sfxClip;
     }
-
-    public void PlaySFX(int index)
+     public void PlaySFX()
     {
-        if (sfxClips == null || sfxClips.Count == 0 || index < 0 || index >= sfxClips.Count)
-        {
-            Debug.LogError("Invalid index or no sound clips specified.");
-            return;
-        }
-
-        AudioClip clip = sfxClips[index];
-        sfxSource.PlayOneShot(clip);
+        sfxSource.PlayOneShot(sfxClip);
     }
+
+
+    
 }

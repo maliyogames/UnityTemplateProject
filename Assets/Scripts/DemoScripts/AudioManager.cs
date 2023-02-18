@@ -8,10 +8,13 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     [SerializeField] AudioMixer mixer;
+    public AudioClip bgMusic;
+    public AudioSource bgSource;
     
-
     public const string MUSIC_KEY = "bgVolume";
     public const string SFX_KEY = "sfxVolume";
+
+    
 
     void Awake()
     {
@@ -27,15 +30,21 @@ public class AudioManager : MonoBehaviour
 
         
     }
+
     void Start()
     {
         LoadVolume();
-    }
-    void Update()
-    {
-        
+        PlayBgMusic();
     }
     
+    void PlayBgMusic()
+    {
+        bgSource.clip = bgMusic;
+        bgSource.Play();
+    }
+  
+
+   
     void LoadVolume()
     {
         float musicVolume = PlayerPrefs.GetFloat(MUSIC_KEY, 1f);
