@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4436679843170187807, guid: c13c575d7e67fcc4489461df11d7ccdf, type: 3}
       propertyPath: m_Name
-      value: ResumeButton
+      value: ResumeButton Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4436679843170188000, guid: c13c575d7e67fcc4489461df11d7ccdf, type: 3}
       propertyPath: m_Pivot.x
