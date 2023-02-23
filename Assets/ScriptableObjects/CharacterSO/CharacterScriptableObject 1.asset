@@ -16,4 +16,4 @@ MonoBehaviour:
   charName: Text1
   charStrength: 50
   charSpeed: 60
-  charDescription: 
+  charDescription: Hello

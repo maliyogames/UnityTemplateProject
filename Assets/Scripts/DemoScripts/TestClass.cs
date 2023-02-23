@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-// Date updated: " + DateTime.Now.ToString("MM/dd/yyyy")
+// Date updated: 2023-02-20
 
 
 public class TestClass :MonoBehaviour
