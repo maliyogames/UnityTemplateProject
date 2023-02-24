@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-// Date updated: 2023-02-20
+// Date updated: 2023-02-23
 [CreateAssetMenu(fileName = "CharacterScriptableObject", menuName = "CharacterScriptableObject")]
 public class CharacterScriptableObject : ScriptableObject
 {

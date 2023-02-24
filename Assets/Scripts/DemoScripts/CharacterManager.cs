@@ -53,11 +53,11 @@ public class CharacterManager : MonoBehaviour
 
     private void ShowSO()
     {
-        charDescription.text = charObjects[charIndex].Description;
+        charDescription.text = "<b>Description</b>\n"+ charObjects[charIndex].Description;
         charImg.sprite = charObjects[charIndex].Img;
-        charName.text = charObjects[charIndex].Name;
-        charSpeed.text = charObjects[charIndex].Speed.ToString();
-        charStrength.text = charObjects[charIndex].Strength.ToString();
+        charName.text =charObjects[charIndex].Name;
+        charSpeed.text = "<b>Speed</b>: "+charObjects[charIndex].Speed.ToString();
+        charStrength.text = "<b>Strength</b>:"+charObjects[charIndex].Strength.ToString();
     }
 
     private void CheckButtonAvailability()

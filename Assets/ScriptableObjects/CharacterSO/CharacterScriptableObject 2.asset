@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7cf4d7d231254541adfc87304f3e964, type: 3}
   m_Name: CharacterScriptableObject 2
   m_EditorClassIdentifier: 
-  charImg: {fileID: 0}
-  charName: 
+  charImg: {fileID: 21300000, guid: 2e0d540e92d079f4a83daa615be319e6, type: 3}
+  charName: Lorem Txt 2
   charStrength: 0
   charSpeed: 0
-  charDescription: Hi
+  charDescription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+    mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+    laborum
