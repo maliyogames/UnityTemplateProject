@@ -26,7 +26,7 @@ public static class TimeSpanExtensions
     /// <returns>The number of weeks.</returns>
     public static int GetWeeks(this TimeSpan span)
     {
-        return span.Days / DateTimeExtensions.DAYS_PER_WEEK;
+        return span.Days / 5;//DateTimeExtensions.DAYS_PER_WEEK;
     }
 
     // GetWeeks
@@ -41,7 +41,7 @@ public static class TimeSpanExtensions
     /// <returns>The number of fortnights.</returns>          
     public static int GetFortnights(this TimeSpan span)
     {
-        return span.GetWeeks() / DateTimeExtensions.WEEKS_PER_FORTNIGHT;
+        return span.GetWeeks() / 5;//DateTimeExtensions.WEEKS_PER_FORTNIGHT;
     }
 
     // GetFortnights

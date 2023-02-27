@@ -815,13 +815,13 @@ public static class StringExtensions
         StringBuilder sb = new StringBuilder();
 
         // pick random locations for each
-        int UpperCaseIndex = 0.RandomRangeInclusive(PasswordLength);
-        int NumberIndex = 1.RandomRangeInclusive(PasswordLength);
+        int UpperCaseIndex = 0;//0.RandomRangeInclusive(PasswordLength);
+        int NumberIndex =0;// 1.RandomRangeInclusive(PasswordLength);
         while (NumberIndex == UpperCaseIndex)
-            NumberIndex = 1.RandomRangeInclusive(PasswordLength);
-        int SpecialIndex = 1.RandomRangeInclusive(PasswordLength);
+            NumberIndex =0;// 1.RandomRangeInclusive(PasswordLength);
+        int SpecialIndex = 0;//1.RandomRangeInclusive(PasswordLength);
         while ((SpecialIndex == UpperCaseIndex) || (SpecialIndex == NumberIndex))
-            SpecialIndex = 1.RandomRangeInclusive(PasswordLength);
+            SpecialIndex = 0;//1.RandomRangeInclusive(PasswordLength);
 
         // loop through and randomly create the password
         for (int i = 0; i < PasswordLength; i++)
@@ -830,7 +830,7 @@ public static class StringExtensions
             if ((mixedCaseRequired) && (i == UpperCaseIndex))
             {
                 // A-Z (65-90)
-                sb.Append(65.RandomRangeInclusive(90).ToChar());
+                //sb.Append(65.RandomRangeInclusive(90).ToChar());
                 continue;
             }
 
@@ -838,14 +838,14 @@ public static class StringExtensions
             if (i == 0)
             {
                 // a-z (97-122)
-                sb.Append(97.RandomRangeInclusive(122).ToChar());
+                //sb.Append(97.RandomRangeInclusive(122).ToChar());
                 continue;
             }
 
             if ((numberRequired) && (i == NumberIndex))
             {
                 // 0-9 (48-57)
-                sb.Append(48.RandomRangeInclusive(57).ToChar());
+                //sb.Append(48.RandomRangeInclusive(57).ToChar());
                 continue;
             }
 
@@ -859,7 +859,7 @@ public static class StringExtensions
             bool HasCode = false;
 
             // loop until we get a code for this iteration
-            while (!HasCode)
+            /*while (!HasCode)
             {
                 // random number 1-4
                 switch (1.RandomRangeInclusive(4))
@@ -890,7 +890,7 @@ public static class StringExtensions
                         }
                         break;
                 }
-            }
+            }*/
         }
 
         // return
@@ -912,7 +912,7 @@ public static class StringExtensions
         do
         {
             // get the code
-            specialCode = 32.RandomRangeInclusive(65);
+            specialCode = 0;//32.RandomRangeInclusive(65);
 
             // keep going until we get a valid one
             // skip numbers (ASCII 48 - 57)
