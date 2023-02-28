@@ -3,5 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CharacterScriptableObject", menuName = "CharacterScriptableObject")]
 public class CharacterScriptableObject : ScriptableObject
 {
-    //Add your code
+    public Sprite Img;
+    public string Name;
+    public string Description;
+    public int Speed;
+    public float Strength;
 }
