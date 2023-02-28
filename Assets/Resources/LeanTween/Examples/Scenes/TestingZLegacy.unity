@@ -135,32 +135,36 @@ PrefabInstance:
       value: LeanTweenLogo
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f6cb897ad03b148b0b891659e4337604, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f6cb897ad03b148b0b891659e4337604, type: 3}
       propertyPath: m_LocalPosition.x
-      value: .219128132
+      value: 0.21912813
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f6cb897ad03b148b0b891659e4337604, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -.00572530553
+      value: -0.0057253055
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f6cb897ad03b148b0b891659e4337604, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.66248274
+      value: 6.6624827
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f6cb897ad03b148b0b891659e4337604, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -.974487007
+      value: -0.974487
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f6cb897ad03b148b0b891659e4337604, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -.00758311991
+      value: -0.00758312
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f6cb897ad03b148b0b891659e4337604, type: 3}
       propertyPath: m_LocalRotation.y
-      value: .224308908
+      value: 0.22430891
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f6cb897ad03b148b0b891659e4337604, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -.00174549432
+      value: -0.0017454943
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6cb897ad03b148b0b891659e4337604, type: 3}
