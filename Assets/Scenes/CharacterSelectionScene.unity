@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &19073575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3606695632764498835, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.6928415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.6679013
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 116.04661
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498836, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
 --- !u!1 &116904006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1094,7 @@ GameObject:
   - component: {fileID: 845112806}
   - component: {fileID: 845112805}
   m_Layer: 5
-  m_Name: NameTxt (2)
+  m_Name: SpeedTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1117,7 +1174,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 33
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1459,7 +1516,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 33
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1980,7 +2037,7 @@ GameObject:
   - component: {fileID: 1891707045}
   - component: {fileID: 1891707044}
   m_Layer: 5
-  m_Name: NameTxt (3)
+  m_Name: StrengthTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2060,7 +2117,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 33
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
