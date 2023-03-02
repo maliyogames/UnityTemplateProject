@@ -39,13 +39,6 @@ This Unity Template Project uses Unity version *2021.3.8f1*
 
 ## How to Use 🍭
 There are two ways to access and use this repository: you can either fork it or download it as a zip file and push it to your own repository for further use.
-If you choose to push the repository to your own repository, you will first need to download the zip file and then follow these steps to complete the process:
-* git init
-* git add .
-* git commit -m "First commit"
-* git branch -M main
-* git remote add origin [URL_OF_REPOSITORY]
-* git push -u origin main
 
 ## Documentation 📄
 The Documentation for the Unity Template Project can be found at the *Resources/Documentation/UnityTemplateDocumentation*
