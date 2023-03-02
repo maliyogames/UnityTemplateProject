@@ -47,6 +47,7 @@ If you choose to push the repository to your own repository, you will first need
 * git remote add origin [URL_OF_REPOSITORY]
 * git push -u origin main
 ## Documentation
+The Documentation for the Unity Template Project can be found at the *Resources/Documentation/UnityTemplateDocumentation*
 
 ## Bug Report
 Feel free to send us  bug reports on [submit bug report](https://github.com/maliyogames/UnityTemplateProject/issues/new). 
