@@ -3,7 +3,7 @@
   <a href="https://www.maliyo.com/">
     <img alt="Maliyo" title="Maliyo" src="" width="450">
   </a>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/2tkU12_MKtw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  [![Alt text](https://img.youtube.com/vi/2tkU12_MKtw/0.jpg)](https://www.youtube.com/watch?v=2tkU12_MKtw)
 
 </p>
 
