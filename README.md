@@ -9,16 +9,11 @@
 <p align="center">
   <a href="https://www.youtube.com/watch?v=2tkU12_MKtw"><img src="https://img.youtube.com/vi/2tkU12_MKtw/0.jpg" alt="VIDEO_ALT_TEXT_GOES_HERE"></a>
 </p>
-<p align="center">
-  GitHub in your pocket. Built with React Native.
-</p>
+
 
 <p align="center">
-  <a href="https://itunes.apple.com/us/app/gitpoint/id1251245162?mt=8">
-    <img alt="Download on the App Store" title="App Store" src="http://i.imgur.com/0n2zqHD.png" width="140">
-  </a>
-
-  <a href="https://play.google.com/store/apps/details?id=com.gitpoint">
+  
+  <a href="https://play.google.com/store/apps/dev?id=7388683869055327292&hl=en&gl=US">
     <img alt="Get it on Google Play" title="Google Play" src="http://i.imgur.com/mtGRPuM.png" width="140">
   </a>
 </p>
@@ -28,7 +23,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [How To Use]("how to use)
+- [How To Use](#how to use)
 - [Feedback](#feedback)
 - [Contributors](#contributors)
 - [Project Requirements](#project-requirements)
