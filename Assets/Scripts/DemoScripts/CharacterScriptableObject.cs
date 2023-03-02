@@ -8,4 +8,5 @@ public class CharacterScriptableObject : ScriptableObject
     public string Description;
     public int Speed;
     public float Strength;
+    public GameObject playerPrefab;
 }

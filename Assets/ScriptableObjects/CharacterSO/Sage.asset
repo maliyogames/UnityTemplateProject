@@ -18,3 +18,4 @@ MonoBehaviour:
     dead. That is why she is sage!!!
   Speed: 65
   Strength: 30
+  playerPrefab: {fileID: 1994372366435838, guid: 91298ac8f6cd9064181bb5ad6ee5752a, type: 3}

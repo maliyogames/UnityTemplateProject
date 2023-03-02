@@ -23,12 +23,14 @@ public class CharacterManager : MonoBehaviour
     [SerializeField]private Button nextButton;
     [SerializeField]private Button prevButton;
 
+
     void Start()
     {
         OnShowSO += ShowSO;
         
         CheckButtonAvailability();
         OnShowSO?.Invoke();
+        
     }
 
     public void NextCharacter()
@@ -49,6 +51,12 @@ public class CharacterManager : MonoBehaviour
             CheckButtonAvailability();
             OnShowSO?.Invoke();
         }
+    }
+
+
+    public void SelectCharacter()
+    {
+        PlayerPrefs.SetInt("playerIndex", charIndex);
     }
 
     private void ShowSO()

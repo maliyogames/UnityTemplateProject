@@ -17,3 +17,4 @@ MonoBehaviour:
   Description: He finds all the enemies with his recon darts
   Speed: 50
   Strength: 80
+  playerPrefab: {fileID: 1994372366435838, guid: b8e1122947d95b94fbceb2f4704250e5, type: 3}

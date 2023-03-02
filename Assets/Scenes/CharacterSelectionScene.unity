@@ -926,7 +926,7 @@ PrefabInstance:
     - target: {fileID: 9074016122002024588, guid: c49f0ad8d9492bd47bf90832665b6983, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 909326692}
     - target: {fileID: 9074016122002024588, guid: c49f0ad8d9492bd47bf90832665b6983, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
@@ -941,7 +941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9074016122002024588, guid: c49f0ad8d9492bd47bf90832665b6983, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PlaySFX
+      value: SelectCharacter
       objectReference: {fileID: 0}
     - target: {fileID: 9074016122002024588, guid: c49f0ad8d9492bd47bf90832665b6983, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -949,7 +949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9074016122002024588, guid: c49f0ad8d9492bd47bf90832665b6983, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: SFXManager, Assembly-CSharp
+      value: CharacterManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9074016122002024588, guid: c49f0ad8d9492bd47bf90832665b6983, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument

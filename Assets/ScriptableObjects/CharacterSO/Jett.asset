@@ -18,3 +18,4 @@ MonoBehaviour:
     her unstoppable knives
   Speed: 100
   Strength: 50
+  playerPrefab: {fileID: 1994372366435838, guid: 641ec5be421fa2146960ca92c3648ba1, type: 3}
