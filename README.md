@@ -17,7 +17,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [How To Use](#how to use)
+- [How To Use](#How-To-Use)
 - [Feedback](#feedback)
 - [Contributors](#contributors)
 - [Project Requirements](#project-requirements)
