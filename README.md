@@ -3,10 +3,12 @@
   <a href="https://www.maliyo.com/">
     <img alt="Maliyo" title="Maliyo" src="" width="450">
   </a>
-  https://img.youtube.com/vi/2tkU12_MKtw/0.jpg
+  
 
 </p>
-
+<p>
+  [![IMAGE_ALT](https://img.youtube.com/vi/UmX4kyB2wfg/0.jpg)](https://www.youtube.com/watch?v=UmX4kyB2wfg)
+</p>
 <p align="center">
   GitHub in your pocket. Built with React Native.
 </p>
