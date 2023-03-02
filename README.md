@@ -1,7 +1,7 @@
 <h1 align="center"> Maliyo Games Unity Template Project </h1> <br>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=2tkU12_MKtw"><img src="https://img.youtube.com/vi/2tkU12_MKtw/0.jpg" alt="VIDEO_ALT_TEXT_GOES_HERE"></a>
+  <img src="https://github.com/maliyogames/UnityTemplateProject/image/maliyoimage.png" alt="VIDEO_ALT_TEXT_GOES_HERE"></a>
 </p>
 
 
