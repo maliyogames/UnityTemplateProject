@@ -53,8 +53,8 @@ The Documentation for the Unity Template Project can be found at the *Resources/
 ## Bug Report 🐜🐜🐜
 Feel free to send us  bug reports on [submit bug report](https://github.com/maliyogames/UnityTemplateProject/issues/new). 
 
-## Contributors 👨‍💻👩‍💻
-* [@MeMeee1](https://github.com/MeMeee1)
-* [@Nwoga Kizito](https://github.com/kizito-cyber)
+## Contributors 👨‍💻👨‍💻
+* [@MeMeee1](https://github.com/MeMeee1) 👩‍💻
+* [@Nwoga Kizito](https://github.com/kizito-cyber) 👨‍💻
 
 
