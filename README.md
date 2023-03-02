@@ -3,7 +3,7 @@
   <a href="https://www.maliyo.com/">
     <img alt="Maliyo" title="Maliyo" src="" width="450">
   </a>
-  [![Alt text](https://img.youtube.com/vi/2tkU12_MKtw/0.jpg)](https://www.youtube.com/watch?v=2tkU12_MKtw)
+  https://img.youtube.com/vi/2tkU12_MKtw/0.jpg
 
 </p>
 
