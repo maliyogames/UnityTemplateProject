@@ -17,10 +17,12 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [How To Use](#How-To-Use)
-- [Feedback](#feedback)
-- [Contributors](#contributors)
 - [Project Requirements](#project-requirements)
+- [How To Use](#How-To-Use)
+- [Documentation](#Documentation)
+- [Bug Report](#bug-report)
+- [Contributors](#contributors)
+
 
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -32,9 +34,11 @@ The Starter Unity Template Project for Maliyo Games is an excellent resource for
 One of the best things about this Starter Unity Template Project is that it is designed specifically for Maliyo Games. This means that it is optimized for the types of games that Maliyo Games typically creates, and it includes features that are commonly used in these games. 
 **This Project works both for Landscape and Portrait Modes**
 
+## Project Requirements
+This Unity Template Project uses Unity version *2021.3.8f1*
+
 ## How to Use
 There are two ways to access and use this repository: you can either fork it or download it as a zip file and push it to your own repository for further use.
-
 If you choose to push the repository to your own repository, you will first need to download the zip file and then follow these steps to complete the process:
 * git init
 * git add .
@@ -42,10 +46,10 @@ If you choose to push the repository to your own repository, you will first need
 * git branch -M main
 * git remote add origin [URL_OF_REPOSITORY]
 * git push -u origin main
+## Documentation
 
-
-## Feedback
-Feel free to send us feedback, bug reports on [file an issue/submit bug report](https://github.com/maliyogames/UnityTemplateProject/issues/new). 
+## Bug Report
+Feel free to send us  bug reports on [submit bug report](https://github.com/maliyogames/UnityTemplateProject/issues/new). 
 
 
 
