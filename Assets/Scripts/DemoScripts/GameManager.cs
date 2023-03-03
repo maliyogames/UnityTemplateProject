@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         OnPauseGame.Raise();
     }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+    }
     public void QuitGame()
     {
         Application.Quit();

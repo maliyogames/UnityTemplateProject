@@ -8,6 +8,7 @@ using TMPro;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField]RectTransform fader;
+    
 
     
     public void LoadLevel(int sceneIndex)
