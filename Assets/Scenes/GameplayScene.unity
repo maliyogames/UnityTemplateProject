@@ -509,7 +509,7 @@ RectTransform:
   m_Children:
   - {fileID: 1039644360}
   m_Father: {fileID: 1605217481}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -915,8 +915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd58ab5b05228c6489583e8c7dae3561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnPauseGame: {fileID: 0}
-  OnResumeGame: {fileID: 0}
+  OnPauseGame: {fileID: 11400000, guid: e8b638bbb8cdb27418dd2e340e60f41f, type: 2}
+  OnResumeGame: {fileID: 11400000, guid: 028bacccbaa9ad8418cde5d748f0fce2, type: 2}
 --- !u!1 &1134878707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,8 +1384,8 @@ RectTransform:
   - {fileID: 617952014}
   - {fileID: 693865585}
   - {fileID: 2077733201}
-  - {fileID: 1414168763}
   - {fileID: 644334182}
+  - {fileID: 1414168763}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1674,18 +1674,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2026422474}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: PauseGame
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
