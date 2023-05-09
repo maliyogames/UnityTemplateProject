@@ -6,7 +6,7 @@ using UnityEngine;
 public class EconomyManager : ScriptableObject
 {
     [FancyHeader("$  ECONOMY MANAGER  $", 1.5f, "lime", 5.5f, order = 0)]
-    // [Label("")] public _empty e;
+  
 
     [Label("Money Balance")] [ReadOnly] [SerializeField] double m_Money;
     [Label("Total amount accumulated")] [ReadOnly] [SerializeField] double m_TotalMoney;
@@ -19,25 +19,18 @@ public class EconomyManager : ScriptableObject
     
     [Space, BoxGroup("SO Events"), Required] public FloatEvent onTotalMoneyIncreased;
     
-
-    
-
-    
-
-
-    
     
 
 
     [BoxGroup("Config")]
-    [Tooltip("The amount of money the player starts the game with")] public float startingMoney = 0;
+    [Tooltip("The amount of money the player starts the game with")] public float startingMoney = 80f;
 
     
     [BoxGroup("Level Amount")]
     [Tooltip("Money earned after the player has completed a level")] public float completedLevelReward = 200;
 
 
-
+ 
     
 
 
@@ -45,12 +38,12 @@ public class EconomyManager : ScriptableObject
     public double Money
     {
         get { return m_Money; }
-        protected set { m_Money = value; }
+        set { m_Money = value; }
     }
     public double TotalMoney
     {
         get { return m_TotalMoney; }
-        protected set { m_TotalMoney = value; }
+       set { m_TotalMoney = value; }
     }
     
     
@@ -62,7 +55,7 @@ public class EconomyManager : ScriptableObject
     }
     
 
-   
+    
 
     public void SetTotalMoney(double amount)
     {

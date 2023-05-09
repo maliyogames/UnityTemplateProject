@@ -16,4 +16,4 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_previousValue: 400
-  testProperty: 400
+  testProperty: 500
