@@ -14,13 +14,15 @@ public class CharacterManager : MonoBehaviour
      [SerializeField] TextMeshProUGUI charStrength;
       [SerializeField] Image charImg;
     [SerializeField] int charIndex;
-
+    [SerializeField] TextMeshProUGUI coinsText;
+   
     public delegate void ShowSOEventHandler();
     public event ShowSOEventHandler OnShowSO;
     
 
     [SerializeField]private Button nextButton;
     [SerializeField]private Button prevButton;
+    [SerializeField] private Button unlockButton;
 
 
     void Start()
@@ -29,7 +31,26 @@ public class CharacterManager : MonoBehaviour
         
         CheckButtonAvailability();
         OnShowSO?.Invoke();
-        
+      
+        foreach(CharacterScriptableObject character in charObjects)
+        {
+            if(character.price==0)
+            {
+                character.isUnlocked = true;
+            }
+            else
+            {
+               if(PlayerPrefs.GetInt(character.name,0)==0)
+                {
+                    character.isUnlocked = false;
+                }
+                else
+                {
+                    character.isUnlocked = true;
+                }
+            }
+        }
+        UpdateUI();
     }
 
     public void NextCharacter()
@@ -40,7 +61,9 @@ public class CharacterManager : MonoBehaviour
             CheckButtonAvailability();
             OnShowSO?.Invoke();
         }
+        UpdateUI();
     }
+
 
     public void PreviousCharacter()
     {
@@ -50,6 +73,8 @@ public class CharacterManager : MonoBehaviour
             CheckButtonAvailability();
             OnShowSO?.Invoke();
         }
+             UpdateUI();
+
     }
 
 
@@ -83,5 +108,38 @@ public class CharacterManager : MonoBehaviour
             prevButton.interactable = true;
             nextButton.interactable = true;
         }
+    }
+
+    public void UpdateUI()
+    {
+        coinsText.text = "Price: " + PlayerPrefs.GetInt("NumberOfCoins", 0);
+        if (charObjects[charIndex].isUnlocked == true)
+        {
+            unlockButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            unlockButton.GetComponentInChildren<TextMeshProUGUI>().text = "Price: " + charObjects[charIndex].price;
+            if ((PlayerPrefs.GetInt("NumberOfCoins") < charObjects[charIndex].price))
+            {
+                unlockButton.gameObject.SetActive(true);
+                unlockButton.interactable = false;
+            }
+            else
+            {
+                unlockButton.gameObject.SetActive(true);
+                unlockButton.interactable = true;
+            }
+        }
+    }
+
+    public void Unlock()
+    {
+        int coins = PlayerPrefs.GetInt("NumberOfCoins", 0);
+        int price = charObjects[charIndex].price;
+        PlayerPrefs.SetInt("NumberOfCoins", coins - price);
+        PlayerPrefs.SetInt(charObjects[charIndex].name, 1);
+        charObjects[charIndex].isUnlocked = true;
+        UpdateUI();
     }
 }

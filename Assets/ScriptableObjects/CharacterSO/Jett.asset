@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7cf4d7d231254541adfc87304f3e964, type: 3}
   m_Name: Jett
   m_EditorClassIdentifier: 
-  Img: {fileID: 21300000, guid: f0634ae540a44fe49a80277b2cf22a92, type: 3}
+  Img: {fileID: 21300000, guid: 70632ddfe8e71b04b8f90ef7e29a9e98, type: 3}
   Name: Jett
   Description: She is the wind girl and she dashes around enemies throwing at them
     her unstoppable knives

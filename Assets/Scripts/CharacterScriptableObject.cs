@@ -8,5 +8,7 @@ public class CharacterScriptableObject : ScriptableObject
     public string Description;
     public int Speed;
     public float Strength;
+    public int price;
+    public bool isUnlocked;
     public GameObject playerPrefab;
 }
