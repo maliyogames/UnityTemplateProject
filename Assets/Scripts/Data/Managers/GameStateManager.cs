@@ -22,10 +22,19 @@ public class GameStateManager : SingletonScriptableObject<GameStateManager>
     [SerializeField] private EconomyManager m_economyManager;
     private EconomyManager m_saveEconomyManager;
 
-    
+
+    [SerializeField] private LevelManager m_levelManager;
+    private LevelManager m_saveLevelManager;
+
+
     public static EconomyManager EconomyManager
     {
         get { return Instance.m_economyManager; }
+
+    }
+    public static LevelManager LevelManager
+    {
+        get { return Instance.m_levelManager; }
 
     }
     public static ApplicationManager ApplicationManager
@@ -37,6 +46,7 @@ public class GameStateManager : SingletonScriptableObject<GameStateManager>
     public void Init()
     {
         GameStateManager.EconomyManager.InitializeValues();
+      
         
     }
 

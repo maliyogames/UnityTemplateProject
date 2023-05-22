@@ -17,3 +17,4 @@ MonoBehaviour:
   m_loadingDone: 0
   m_applicationManager: {fileID: 11400000, guid: 40c132dd64254c440971a19b5937a8de, type: 2}
   m_economyManager: {fileID: 11400000, guid: 8f7d5628843d553448469e29724508f3, type: 2}
+  m_levelManager: {fileID: 11400000, guid: de94cf2033617b645b9384b37c1269fb, type: 2}
