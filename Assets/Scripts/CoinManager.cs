@@ -17,4 +17,11 @@ public class CoinManager : MonoBehaviour
     {
         coinsText.text = "Coins: " + PlayerPrefs.GetInt("NumberOfCoins");
     }
+
+    public void AddPoint()
+    {
+        numberOfCoins++;
+        PlayerPrefs.SetInt("NumberOfCoins", numberOfCoins);
+        coinsText.text = "Coins: " + PlayerPrefs.GetInt("NumberOfCoins");
+    }
 }

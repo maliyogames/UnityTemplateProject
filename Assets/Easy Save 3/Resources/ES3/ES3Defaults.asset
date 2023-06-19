@@ -30,32 +30,18 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - NaughtyAttributes.Test
-    - Assembly-CSharp
+    - Assembly-CSharp-firstpass
     - LeanTransition
     - UIEffect_Demo
-    - Assembly-CSharp-firstpass
-    - AV.Inspector.Runtime
+    - Assembly-CSharp
+    - CW.Common
     - LeanGUI
-    - spine-unity-examples
-    - spine-unity
     - NaughtyAttributes.Core
-    - NativeShare.Runtime
     - UIEffect
-    - AllIn1SpriteShaderAssembly
     - LeanCommon
-    - UltEvents
-    - Coffee.UIParticle
-    - AssetUsageFinder
     - NaughtyAttributes.Editor
     - PsdPlugin
-    - AV.Inspector
-    - spine-unity-editor
-    - Coffee.UIParticle.Editor
-    - PPv2URPConverters
-    - GoogleMobileAds.Editor
     - LeanTransition.Editor
-    - spine-unity-examples-editor
-    - NativeShare.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
