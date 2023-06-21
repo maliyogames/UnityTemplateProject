@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870a7fe3c948cab41b0b015bc4d75ac6, type: 3}
   m_Name: Level 9
   m_EditorClassIdentifier: 
-  levelName: Level 9
+  levelName: 9
   numberOfEnemies: 8
   levelUnlocked: 0
+  levelNumber: 11

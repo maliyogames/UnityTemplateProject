@@ -60,9 +60,8 @@ public class EnemyControl : MonoBehaviour
         Vector3 nextDestination = this.transform.position;
         nextDestination += wanderDistance * new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f)).normalized;
 
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition(nextDestination, out hit, 3f, NavMesh.AllAreas))
-            navAgent.SetDestination(hit.position);
+       
+            navAgent.SetDestination(nextDestination);
     }
 
     
