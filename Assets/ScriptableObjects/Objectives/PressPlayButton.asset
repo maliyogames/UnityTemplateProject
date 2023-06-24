@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PressPlayButton
   m_EditorClassIdentifier: 
   Name: Play Button
-  DisplayName: Press Plauy Button
+  DisplayName: Press Play Button
   rewardAmount: 10
   isBuyableData: 0
   identifier: 

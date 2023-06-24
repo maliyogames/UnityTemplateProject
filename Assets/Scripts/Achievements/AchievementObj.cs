@@ -40,6 +40,7 @@ public class AchievementObj : MonoBehaviour
 		so.OnObjectiveCompleted.AddListener(() =>
 		{
 			AchievementManager.instance.messageQueue.Add("Completed: " + DescText.text);
+			
 			_e?.Invoke();
 
 
