@@ -1207,6 +1207,7 @@ MonoBehaviour:
   ProgressSlider: {fileID: 6147063516493202248}
   ProgressText: {fileID: 6147063516047864215}
   claimBtn: {fileID: 6147063516181779879}
+  onMoneyChanged: {fileID: 11400000, guid: 77f817ed03f5b5f4698ad3279b366398, type: 2}
   enabledColor: {r: 0.9150943, g: 0.89264864, b: 0.89264864, a: 1}
   disabledColor: {r: 0.3018868, g: 0.29448202, b: 0.29448202, a: 1}
   so: {fileID: 0}

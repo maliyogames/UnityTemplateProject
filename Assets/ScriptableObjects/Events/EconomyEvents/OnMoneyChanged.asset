@@ -15,5 +15,5 @@ MonoBehaviour:
   OnRaise:
     m_PersistentCalls:
       m_Calls: []
-  m_previousValue: 400
-  testProperty: 500
+  m_previousValue: 10
+  testProperty: 0

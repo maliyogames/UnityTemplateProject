@@ -14,7 +14,7 @@ public class AchievementObj : MonoBehaviour
 	public Slider ProgressSlider;
 	public TextMeshProUGUI ProgressText;
 	public Button claimBtn;
-
+	public FloatEvent onMoneyChanged;
 	[Space]
 	public Color enabledColor;
 	public Color disabledColor;
@@ -66,6 +66,7 @@ public class AchievementObj : MonoBehaviour
 	public void Claim()
 	{
 		GameStateManager.EconomyManager.AddMoney(so.rewardAmount);
+		onMoneyChanged.Raise(so.rewardAmount);
 		PlayerPrefs.SetInt(so.m_Name() + "_isClaimed", 1);
 		this.gameObject.SetActive(false);
 		if (!isDaily)
