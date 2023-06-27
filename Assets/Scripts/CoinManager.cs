@@ -5,23 +5,26 @@ using TMPro;
 public class CoinManager : MonoBehaviour
 {
     public int numberOfCoins;
+    public FloatEvent onMoneyChanged;
     public TextMeshProUGUI coinsText;
     // Start is called before the first frame update
     void Start()
     {
-       PlayerPrefs.SetInt("NumberOfCoins", numberOfCoins);
+        coinsText.text = "Coins: " + numberOfCoins.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        coinsText.text = "Coins: " + PlayerPrefs.GetInt("NumberOfCoins");
+        
+        coinsText.text = "Coins: " + numberOfCoins.ToString();
     }
 
     public void AddPoint()
     {
         numberOfCoins++;
-        PlayerPrefs.SetInt("NumberOfCoins", numberOfCoins);
-        coinsText.text = "Coins: " + PlayerPrefs.GetInt("NumberOfCoins");
+        GameStateManager.EconomyManager.AddMoney(numberOfCoins);
+        onMoneyChanged.Raise(numberOfCoins);
+        coinsText.text = "Coins: " + numberOfCoins.ToString();
     }
 }

@@ -1024,7 +1024,7 @@ PrefabInstance:
     - target: {fileID: 9035964459416177759, guid: 1947390e6b13d1a418091b1a35f63db5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: be340a165cb9c8d4cb50f1deeb51d4ea, type: 3}
+      objectReference: {fileID: 21300000, guid: 66196e885d54271429b8cc042d2789cb, type: 3}
     - target: {fileID: 9035964459416177826, guid: 1947390e6b13d1a418091b1a35f63db5, type: 3}
       propertyPath: m_Name
       value: AchievementButton
@@ -2621,7 +2621,7 @@ PrefabInstance:
       objectReference: {fileID: 1887375866}
     - target: {fileID: 3985061143786517163, guid: 04f8ff0a44aa9fd4bb58c4353c04877f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1155458.4
+      value: 1214241.4
       objectReference: {fileID: 0}
     - target: {fileID: 3985061144737325857, guid: 04f8ff0a44aa9fd4bb58c4353c04877f, type: 3}
       propertyPath: m_RootOrder
