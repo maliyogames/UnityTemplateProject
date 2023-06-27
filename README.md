@@ -42,6 +42,7 @@ There are two ways to access and use this repository: you can either fork it or 
 
 ## Documentation 📄
 The Documentation for the Unity Template Project can be found at the *Resources/Documentation/UnityTemplateDocumentation*
+https://docs.google.com/document/d/1rAxMcl8Roi9ZOn8g0dpaR8tzB31axnWW9XeVYK12aXM/edit?usp=sharing
 
 ## Bug Report 🐜🐜🐜
 Feel free to send us  bug reports at [submit bug report](https://github.com/maliyogames/UnityTemplateProject/issues/new). 
